@@ -1,81 +1,69 @@
-/* The "Big Picture" Layout */
+
 * {
-    margin: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Centering the content inside */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    font-family: sans-serif;
+}
+
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 75, 110, 0.2);
+    width: fit-content;      
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .profile-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.love {
+    font-family: Georgia, serif;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 
 .msg {
-   display: flex;
-    
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 
-.container {
-    text-align: center;
-    background: white;
-    padding: 10px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(255, 75, 110, 0.2);
-    width: 90%;          /* Or a fixed width like 600px */
-  max-width: 800px;    
-  margin: 0 auto;
-    
-}
 
-/* Base styles for the button container */
 .answer {
-  display: flex;
-  gap: 200px;
-  justify-content: center;
-  margin-top: 20px;
+    display: flex;
+    gap: 20px;              
+    justify-content: center;
+    width: 100%;
 }
 
-/* Common transition for smooth animation */
 .btn {
-  transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 25px;
 }
 
-/* "Yes" Button: Grow and turn Green (Success) */
-.btn-secondary:first-child:hover {
-  transform: scale(2.3);          /* Grows by 30% */
-  background-color: #28a745;      /* Success Green */
-  border-color: #28a745;
-  box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
-}
 
-/* "No" Button: Shrink and turn Red (Danger) */
-.btn-secondary:last-child:hover {
-  transform: scale(0.7);          /* Shrinks to 70% size */
-  background-color: #dc3545;      /* Danger Red */
-  border-color: #dc3545;
-  opacity: 0.8;                   /* Makes it look slightly "faded" as it shrinks */
-}
-.smg {
-    transition: all 0.5s ease;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.love {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center;     /* Centers vertically */
-  min-height: 100vh;       /* Makes the body take up the full screen height */
-  background-color: #f8f9fa; /* Optional: adds a light background */
+#buttonYes:hover {
+    transform: scale(1.5); 
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+    color: white;
 }
