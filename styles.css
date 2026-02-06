@@ -1,0 +1,68 @@
+/* The "Big Picture" Layout */
+* {
+    margin: 10px;
+}
+
+/* Centering the content inside */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+.msg {
+   display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 75, 110, 0.2);
+}
+
+/* Base styles for the button container */
+.answer {
+  display: flex;
+  gap: 200px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Common transition for smooth animation */
+.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+/* "Yes" Button: Grow and turn Green (Success) */
+.btn-secondary:first-child:hover {
+  transform: scale(2.3);          /* Grows by 30% */
+  background-color: #28a745;      /* Success Green */
+  border-color: #28a745;
+  box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
+}
+
+/* "No" Button: Shrink and turn Red (Danger) */
+.btn-secondary:last-child:hover {
+  transform: scale(0.7);          /* Shrinks to 70% size */
+  background-color: #dc3545;      /* Danger Red */
+  border-color: #dc3545;
+  opacity: 0.8;                   /* Makes it look slightly "faded" as it shrinks */
+}
+.smg {
+    transition: all 0.5s ease;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.love {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
