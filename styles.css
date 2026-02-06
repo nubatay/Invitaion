@@ -27,6 +27,10 @@
     padding: 10px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(255, 75, 110, 0.2);
+    width: 90%;          /* Or a fixed width like 600px */
+  max-width: 800px;    
+  margin: 0 auto;
+    
 }
 
 /* Base styles for the button container */
@@ -65,4 +69,13 @@
 
 .love {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  min-height: 100vh;       /* Makes the body take up the full screen height */
+  background-color: #f8f9fa; /* Optional: adds a light background */
 }

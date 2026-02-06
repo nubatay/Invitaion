@@ -22,3 +22,4 @@ btnYes.addEventListener('click', () => {
     // Optional: Hide the No button once she says Yes
     btnNo.style.display = 'none';
 });
+
